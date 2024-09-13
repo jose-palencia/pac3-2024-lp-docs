@@ -1,0 +1,27 @@
+meta {
+  name: Edit
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{PATH}}/posts/AEBF85C9-BA99-43F5-46E2-08DCAB74EED8
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Titulo de Prueba | Editado",
+    "overview": "string",
+    "authorId": "1dcd6bfc-67b1-4a56-a743-841863cb0a1f",
+    "publicationDate": "2024-07-22T00:16:47.182Z",
+    "categoryId": "734ebb61-9e5e-49f8-f415-08dca52b527f",
+    "content": "Este es el contenido de la noticia de prueba | Editado",
+    "tagList": [
+      "Java",
+      "TAG",
+      "TAG2"
+    ]
+  }
+}

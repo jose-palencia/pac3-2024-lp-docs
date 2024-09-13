@@ -1,0 +1,25 @@
+meta {
+  name: Get One By Id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PATH}}/posts/05267c46-6e91-4103-8e03-3c1aff3ee900
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Titulo de Prueba",
+    "authorId": "1dcd6bfc-67b1-4a56-a743-841863cb0a1f",
+    "publicationDate": "2024-07-22T00:16:47.182Z",
+    "categoryId": "734ebb61-9e5e-49f8-f415-08dca52b527f",
+    "content": "Este es el contenido de la noticia de prueba",
+    "tagList": [
+      "Java",
+      "TAG"
+    ]
+  }
+}
