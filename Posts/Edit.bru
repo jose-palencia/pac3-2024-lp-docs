@@ -7,7 +7,11 @@ meta {
 put {
   url: {{PATH}}/posts/AEBF85C9-BA99-43F5-46E2-08DCAB74EED8
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
