@@ -12,7 +12,17 @@ post {
 
 body:json {
   {
-    "email": "admin@blogunah.edu",
-    "password": "Temporal01*"
+    "email": "{{emailValue}}",
+    "password": "{{passwordValue}}"
   }
+}
+
+vars:pre-request {
+  emailValue: admin@blogunah.edu
+  passwordValue: Temporal01*
+}
+
+script:post-response {
+  let response = res.getBody()
+  bru.setEnvVar("TOKEN", response.data?.token ?? '')
 }
